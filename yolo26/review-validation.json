@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "validated_utc": "2026-09-20T06:01:03.255516+00:00",
+  "finding": "validate_yolo26.py forced OPENCV_FORCE_DNN_ENGINE=2 before importing a detector that rejects overrides.",
+  "fix": "Removed the override; import the detector first, reuse its named engine selection, and log its script-local engine_name.",
+  "validator_command": "/Users/spmallick/.venv/codex/bin/python validate_yolo26.py",
+  "validator_exit_code": 0,
+  "opencv": "5.0.0",
+  "ultralytics": "8.4.27",
+  "torch": "2.10.0",
+  "onnx": "1.20.1",
+  "engine": "cv2.dnn.ENGINE_NEW; CPU, no classic fallback",
+  "retained_detection_count": 5,
+  "retained_class_ids": [
+    5,
+    0,
+    0,
+    0,
+    0
+  ],
+  "max_box_absolute_error_input_pixels": 0.0001678466796875,
+  "max_confidence_absolute_error": 1.4901161193847656e-06,
+  "environment_override_rejected_before_cv2_import": true,
+  "helper_scan": "All YOLO Python helpers inspected: no assignment to OPENCV_FORCE_DNN_ENGINE remains.",
+  "label_clarification": "engine_name is a script-local logging string; engine selection still uses named cv2.dnn constants.",
+  "python_cpp_parity_after_label_rename": "pass",
+  "source_sha256": {
+    "detect_yolo26.py": "62249ac3874064c773acb16d0899ba610d2549ac67b4598ec145aa2af1967b7e",
+    "validate_yolo26.py": "a82e5ff39a5ed86701d1a0093d3003bd321d20d34de83a64f44bcd5a25faf51b"
+  }
+}

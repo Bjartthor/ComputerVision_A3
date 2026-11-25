@@ -1,0 +1,21 @@
+# Dataset (must not be uploaded)
+dataset/
+dataset*.zip
+trainingPhotos/
+ValidatingPhotos/
+makesenseAI/
+content/runs/detect/*/train_batch*.jpg
+content/runs/detect/*/val_batch*_labels.jpg
+
+# Virtual environments
+.opencv/
+.venv*/
+yolo26/.venv-export-yolo/
+
+# Large / re-downloadable weights
+yolo26/yolo26n.pt
+yolo26/yolo26s.pt
+content/runs/detect/*/weights/last.pt
+content/runs/detect/train/weights/
+
+__pycache__/

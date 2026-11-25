@@ -1,0 +1,86 @@
+{
+  "validated_utc": "2026-09-20T06:00:13.980889+00:00",
+  "status": "pass",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "opencv": "5.0.0",
+  "opencv_module": "/Users/spmallick/.venv/codex/lib/python3.14/site-packages/cv2/__init__.py",
+  "opencv_build_information": "opencv_build_information.txt",
+  "numpy": "2.3.5",
+  "ultralytics": "8.4.27",
+  "torch": "2.10.0",
+  "onnx": "1.20.1",
+  "engine": "cv2.dnn.ENGINE_NEW; CPU, no classic fallback",
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "output_shape": [
+    1,
+    300,
+    6
+  ],
+  "onnx_checker": "pass",
+  "preprocessing_matches_ultralytics_letterbox": {
+    "bus_1080x810": "exact pixel equality",
+    "odd_landscape_721x961": "exact pixel equality"
+  },
+  "source_framework_reference": "PyTorch source weights; identical input blob; one-to-one head",
+  "retained_detection_count": 5,
+  "retained_class_ids": [
+    5,
+    0,
+    0,
+    0,
+    0
+  ],
+  "max_box_absolute_error_input_pixels": 0.0001678466796875,
+  "max_confidence_absolute_error": 1.4901161193847656e-06,
+  "reference_tolerances": {
+    "box_absolute_input_pixels": 0.001,
+    "confidence_absolute": 1e-05
+  },
+  "scope": "Single real image execution and source-framework agreement, not dataset accuracy or speed benchmarking.",
+  "executed_commands": [
+    "/Users/spmallick/.venv/codex/bin/python validate_yolo26.py"
+  ],
+  "fresh_isolated_export": {
+    "status": "pass",
+    "validated_utc": "2026-09-19T19:08:10.278257+00:00",
+    "directory": "/var/folders/yl/wwf1ddld6qg7wx2tn3y61h1m0000gn/T/opencv5-yolo-export-g1c78zy2",
+    "python": "/var/folders/yl/wwf1ddld6qg7wx2tn3y61h1m0000gn/T/opencv5-yolo-export-g1c78zy2/venv/bin/python",
+    "requirements": "requirements-export.txt",
+    "export_script_sha256": "0acd3fd101902f1e368de5ba87f4854f3e06cd4249cba54e2a4d913f07d33581",
+    "pip_check": "No broken requirements found.",
+    "export_exit_code": 0,
+    "onnx_checker": "pass within export_yolo26.py",
+    "source_weights_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "fresh_onnx_sha256": "70d1ec9dba52d99933fe05fcbd069a710bc23447e33afe1024accf9cbb4e8cc4",
+    "fresh_onnx_bytes": 9894576,
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "output_shape": [
+      1,
+      300,
+      6
+    ],
+    "logs": [
+      "fresh-export-install.log",
+      "fresh-export.log",
+      "fresh-export-freeze.txt"
+    ],
+    "commands": [
+      "/var/folders/yl/wwf1ddld6qg7wx2tn3y61h1m0000gn/T/opencv5-yolo-export-g1c78zy2/venv/bin/python -m pip install -r /var/folders/yl/wwf1ddld6qg7wx2tn3y61h1m0000gn/T/opencv5-yolo-export-g1c78zy2/requirements-export.txt",
+      "/var/folders/yl/wwf1ddld6qg7wx2tn3y61h1m0000gn/T/opencv5-yolo-export-g1c78zy2/venv/bin/python -m pip check",
+      "/var/folders/yl/wwf1ddld6qg7wx2tn3y61h1m0000gn/T/opencv5-yolo-export-g1c78zy2/venv/bin/python /var/folders/yl/wwf1ddld6qg7wx2tn3y61h1m0000gn/T/opencv5-yolo-export-g1c78zy2/export_yolo26.py"
+    ],
+    "note": "Fresh isolated virtual environment; reused downloaded official weights and image, reran exact exporter unchanged. ONNX hash differs because export metadata includes a timestamp."
+  }
+}

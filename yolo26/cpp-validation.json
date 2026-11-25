@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "cpp_opencv": "5.0.0",
+  "cpp_engine": "ENGINE_NEW",
+  "python_opencv": "5.0.0",
+  "python_engine": "ENGINE_NEW",
+  "cpp_source_sha256": "1833644ae7c85b5d338be98067d3d081388aa6e87aff14344cf8fd3b94f64d0e",
+  "model_sha256": "7e632786fb57c80ecec255fc22fa5eff73c9d28b5b12e37b5f8a4e326c43cad1",
+  "image_sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+  "output_shape": [
+    1,
+    300,
+    6
+  ],
+  "detection_count": 5,
+  "class_ids": [
+    5,
+    0,
+    0,
+    0,
+    0
+  ],
+  "max_box_absolute_error_original_image_pixels": 4.931640660288394e-07,
+  "max_confidence_absolute_error": 4.779052709125153e-10,
+  "tolerances": {
+    "box_absolute_original_pixels": 0.001,
+    "confidence_absolute": 1e-05
+  },
+  "scope": "One real-image inference and numerical parity with Python, not a COCO accuracy or speed benchmark.",
+  "validated_utc": "2026-09-20T05:55:47.152961+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "cpp_source_release": "https://github.com/opencv/opencv/tree/5.0.0",
+  "environment_override_rejected": {
+    "variable": "OPENCV_FORCE_DNN_ENGINE",
+    "test_value": "2",
+    "exit_code": 1,
+    "stderr": "Unset OPENCV_FORCE_DNN_ENGINE before running this program.",
+    "model_path": "missing-model.onnx",
+    "rejected_before_model_read": true
+  },
+  "execution_command_from_download_root": "./build/yolo26_dnn --details=yolo26/yolo26_cpp_result.json"
+}
